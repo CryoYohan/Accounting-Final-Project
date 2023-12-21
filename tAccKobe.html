@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trialBalance</title>
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+
+    body {
+        background-color: rgb(128, 147, 204);
+    }
+
+    body h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    body h2, h3 {
+        text-align: center;
+        padding-top: 0.5em;
+        color: #262626;
+    }
+
+    .navbar {
+        margin: 0.5% 2%;
+        padding: 1.2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width:90%;
+        background: #a7a9be;
+        border:2px solid #2a2a2a;
+        border-radius: 20px;
+    }
+
+
+    .navbar ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 .5em;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        text-shadow: 2px 2px 1px #16161a;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+        padding-right: 3.7em;
+        transition: 0.5s;
+        font-weight: 700;
+
+    }
+
+    .navbar ul li a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: #2a2a2a;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li a:hover::after {
+        width: 50%;
+
+    }
+
+    .container {
+        background: rgb(255, 227, 191);
+        padding: 2% 3%;
+        margin: 3% 5em;
+        border-radius: 30px;
+        box-shadow: 5px 15px #570d0daf;
+        border: 5px solid #570d0daf;
+    }
+
+
+    acc{
+         text-align: center;
+    }
+    table.tab1 {
+        margin-top: 1.5em;    
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 20%;
+        background: rgb(243, 243, 243);
+    }
+    table.tab2{
+        margin-top: 1.5em;
+        padding-top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 20%;
+        background: rgb(243, 243, 243);
+        display: table;
+        padding-bottom: 20em;
+    
+    }
+    td, th {
+        border: 1px solid #570d0daf;
+        text-align: center;
+        padding: 0.5em;
+        
+    }
+</style>
+<body>
+    <center>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Journal Entry</a></li>
+                <li><a href="index.html">General Ledger</a></li>
+                <li><a href="#">T-Accounts</a></li>
+                <li><a href="#">Trial Balance</a></li>
+                <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+            </ul>           
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Worksheet</a></li>
+                <li><a href="incomestatement.html">Income Statement</a></li>
+                <li><a href="#">Statement of Changes in Owner's Equity</a></li>
+                <li><a href="balancesheet.html">Balance Sheet</a></li>
+            </ul>           
+        </nav>
+    </center>
+    
+    <div class="container">
+        <h1>Statement of Changes in Owner's Equity</h1>
+        <center>
+            <div class="acck">
+                <table class="tab1">
+                    <tr> 
+                        <th colspan="2">CASH</th>  
+                       
+                    </tr>
+                    <tr>    
+                        <td>250,000</td>
+                        <td>50,000</td>      
+                    </tr>
+                    <tr>                
+                        <td>117,000</td>
+                        <td>59,000</td>      
+                    </tr>
+                    <tr>
+                        <td>90,000</td>
+                        <td>20,000</td>    
+                    </tr>
+                    <tr>
+                        <td>113,000</td>
+                        <td>73,000</td>
+                    </tr>
+                    <tr>                
+                        <td></td>
+                        <td>23,000</td>      
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>3,000</td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td>13,000</td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td>200,000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>15,000</td>
+                    </tr>
+                    <tr>
+                        <td>570,000</td>
+                        <td>456,000</td>
+                    </tr>
+                    <tr>
+                        <td>114,000</td>
+                        <td></td>
+                    </tr>
+                </table> 
+                <table class="tab1">
+                    <tr> 
+                        <th colspan="2"> Accounts Receivable</th>  
+                    </tr>
+                    <tr>    
+                        <td>317,000</td>
+                        <td>113,000</td>      
+                    </tr>
+                    <tr>                
+                        <td>204,000</td>
+                        <td></td>      
+                    </tr>
+                    <tr>     
+                </table> 
+                <table class="tab1">
+                    <tr> 
+                        <th colspan="2"> Medical Suppplies</th>  
+                    </tr>
+                    <tr>    
+                        <td>39,000</td>
+                        <td></td>      
+                    </tr>
+                    <tr>                
+                        <td>17,000</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>      
+                    </tr>
+                    <tr>                
+                        <td>56,000</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>      
+                    </tr>
+                </table> 
+             </div>
+             <div class="tab1">
+             <table class="tab1">
+                    <tr> 
+                        <th colspan="2"> Land</th>  
+                    </tr>
+                    <tr>    
+                        <td>250,000</td>
+                        <td></td>      
+                    </tr>
+                    <tr>                
+                        <td>250,000</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>      
+                    </tr>
+                </table> 
+                <table class="tab1">
+                    <tr> 
+                        <th colspan="2"> Medical Building</th>  
+                    </tr>
+                    <tr>    
+                        <td>1,000,000</td>
+                        <td></td>      
+                    </tr>
+                    <tr>                
+                        <td>1,000,000</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>      
+                    </tr>
+                </table> 
+                <table class="tab1">
+                    <tr> 
+                        <th colspan="2"> Medical Equipment</th>  
+                    </tr>
+                    <tr>    
+                        <td>420,000</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>          
+                    </tr>
+                    <tr>                
+                        <td>45,000</td>
+                        <td></td>      
+                    </tr>
+                    <tr>                
+                        <td>465,000</td>
+                        <td></td>      
+                    </tr>
+                </table> 
+             </div>
+
+    </center>
+    </div>
+    
+    
+</body>
+
+</html>

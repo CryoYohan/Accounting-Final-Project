@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheet</title>
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+
+    body {
+        background-color: rgb(128, 147, 204);
+    }
+
+    body h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    body h2, h3 {
+        text-align: center;
+        padding-top: 0.5em;
+        color: #262626;
+    }
+
+    .navbar {
+        margin: 0.5% 2%;
+        padding: 1.2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width:90%;
+        background: #a7a9be;
+        border:2px solid #2a2a2a;
+        border-radius: 20px;
+    }
+
+
+    .navbar ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 .5em;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        text-shadow: 2px 2px 1px #16161a;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+        padding-right: 3.7em;
+        transition: 0.5s;
+        font-weight: 700;
+
+    }
+
+    .navbar ul li a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: #2a2a2a;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li a:hover::after {
+        width: 50%;
+
+    }
+
+    .container {
+        background: rgb(255, 227, 191);
+        padding: 2% 3%;
+        margin: 3% 5em;
+        border-radius: 30px;
+        box-shadow: 5px 15px #570d0daf;
+        border: 5px solid #570d0daf;
+    }
+
+
+    acc{
+         text-align: center;
+    }
+    table {
+        margin-top: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+        background: rgb(243, 243, 243);
+    }
+    td, th {
+        border: 1px solid #570d0daf;
+        text-align: center;
+        padding: 0.2em;
+    }
+</style>
+<body>
+    <center>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Journal Entry</a></li>
+                <li><a href="index.html">General Ledger</a></li>
+                <li><a href="#">T-Accounts</a></li>
+                <li><a href="#">Trial Balance</a></li>
+                <li><a href="#">Adjusting Entries</a></li>
+            </ul>           
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Worksheet</a></li>
+                <li><a href="#">Income Statement</a></li>
+                <li><a href="#">Statement of Changes in Owner's Equity</a></li>
+                <li><a href="balancesheet.html">Balance Sheet</a></li>
+            </ul>           
+        </nav>
+    </center>
+    
+    <div class="container">
+        <h1>Worksheet</h1>
+        <h2>Dr. Nick Marasigan, M.D.</h2>
+        <h3>For the month ended October 31, 2021</h3>
+        <center>
+            <div class="acck ">
+                <table>
+                <tr>
+                        <th>Account code</th>
+                        <th>Account</th>   
+                        <th colspan="2">Trial Balance</Base></th>
+                        <th colspan="2">Adjusting Entries</th>
+                        <th colspan="2">Adjusted Trial Balance</th>
+                        <th colspan="2">Iincome Statement</th>
+                        <th colspan="2">Balance Sheet</th> 
+                </tr>
+               <tr>
+                    <td></td>
+                    <td></td>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                </tr> 
+                <tr>
+                    <td>110</td><!--Account Code-->
+                    <td>Cash</td><!-- Account-->
+                    <td>114,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Creit-->
+                    <td>114,000</td><!-- Adjusted Trial Balance-->
+                    <td></td><!-- Credit-->
+                    <td></td><!-- Income Statement-->
+                    <td></td><!-- Credit-->
+                    <td>114,000</td><!-- Balance Sheet-->
+                    <td></td><!-- Credit-->
+                </tr> 
+                <tr>
+                    <td>120</td><!--Account Code-->
+                    <td>Accounts Receivable</td><!-- Account-->
+                    <td>204,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Creit-->
+                    <td>204,000</td><!-- Adjusted Trial Balance-->
+                    <td></td><!-- Credit-->
+                    <td></td><!-- Income Statement-->
+                    <td></td><!-- Credit-->
+                    <td>204,000</td><!-- Balance Sheet-->
+                    <td></td><!-- Credit-->
+                </tr> 
+                <tr>
+                    <td>130</td><!--Account Code-->
+                    <td>Medical Supplies</td><!-- Account-->
+                    <td>56,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>35,000</td><!-- Adjusting Entries / Credit-->
+                    <td>21,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td>21,000</td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>140</td><!--Account Code-->
+                    <td>Prepaid Insurance</td><!-- Account-->
+                    <td>20,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>1,666,67</td><!-- Adjusting Entries / Credit-->
+                    <td>18,333.33</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td>18,333.33</td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>150</td><!--Account Code-->
+                    <td>Land</td><!-- Account-->
+                    <td>250,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>250,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td>250,000</td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>160</td><!--Account Code-->
+                    <td>Medical Building</td><!-- Account-->
+                    <td>1,000,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>1,000,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td>1,000,000</td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>165</td><!--Account Code-->
+                    <td>Accumulated Depreciaton - Medical Building</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>5,000</td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>5,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>5,000</td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>170</td><!--Account Code-->
+                    <td>Medical Equipment</td><!-- Account-->
+                    <td>465,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>465,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td>465,000</td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>175</td><!--Account Code-->
+                    <td>Accumulated Depreciation - Medical Equipment</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>9,000</td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>9,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>9,000</td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>210</td><!--Account Code-->
+                    <td>24% Notes Payable</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td>400,000</td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>400,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>400,000</td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>220</td><!--Account Code-->
+                    <td>20% Notes Payable</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td>1,200,000</td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>1,200,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>1,200,000</td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>230</td><!--Account Code-->
+                    <td>Accounts Payable</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td>49,000</td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>49,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>49,000</td><!-- Balance Sheet / Credit-->
+                </tr> 
+                <tr>
+                    <td>240</td><!--Account Code-->
+                    <td>Salaries Payable</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>51,000</td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>51,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>51,000</td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>250</td><!--Account Code-->
+                    <td>Interest Payable</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>28,000</td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>28,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>28,000</td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>260</td><!--Account Code-->
+                    <td>Unearend Research Revenue</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td>90,000</td><!-- Trial Balance / Credit-->
+                    <td>30,000</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>60,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>60,000</td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>310</td><!--Account Code-->
+                    <td>Marasigan, Capital</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td>250,000</td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>250,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td>250,000</td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>320</td><!--Account Code-->
+                    <td>Marasigan, Withdrawals</td><!-- Account-->
+                    <td>200,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>200,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td>200,000</td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>330</td><!--Account Code-->
+                    <td>Income Summary</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>410</td><!--Account Code-->
+                    <td>Medical Revenues</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td>434,000</td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>434,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td>434,000</td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>420</td><!--Account Code-->
+                    <td>Research Revenues</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td>30,000</td><!-- Adjusting Entries / Credit-->
+                    <td></td><!-- Adjusted Trial Balance / Debit-->
+                    <td>30,000</td><!-- Adjusted Trial Balance / Credit-->
+                    <td></td><!-- Income Statement / Debit-->
+                    <td>30,000</td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>510</td><!--Account Code-->
+                    <td>Salaries Expense</td><!-- Account-->
+                    <td>73,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td>51,000</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>124,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>124,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>520</td><!--Account Code-->
+                    <td>Insurance Expense</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td>1,666.67</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>1,666.67</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>1,666.67</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>530</td><!--Account Code-->
+                    <td>Repairs Expense</td><!-- Account-->
+                    <td>23,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>23,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>23,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>540</td><!--Account Code-->
+                    <td>Supplies Expense</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td>35,000</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>35,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>35,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>550</td><!--Account Code-->
+                    <td>Association Dues Expense</td><!-- Account-->
+                    <td>15,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>15,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>15,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>560</td><!--Account Code-->
+                    <td>Telephone Expense</td><!-- Account-->
+                    <td>3,000</td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td></td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>3,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>3,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>570</td><!--Account Code-->
+                    <td>Depreciation Expense-Building</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td>5,000</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>5,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>5,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>580</td><!--Account Code-->
+                    <td>Depreciation Expense-Equipment</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td>9,000</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>9,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>9,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td>590</td><!--Account Code-->
+                    <td>Interest Expense</td><!-- Account-->
+                    <td></td><!-- Trial Balance / Debit-->
+                    <td></td><!-- Trial Balance / Credit-->
+                    <td>28,000</td><!-- Adjusting Entries / Debit-->
+                    <td></td><!-- Adjusting Entries / Credit-->
+                    <td>28,000</td><!-- Adjusted Trial Balance / Debit-->
+                    <td></td><!-- Adjusted Trial Balance / Credit-->
+                    <td>28,000</td><!-- Income Statement / Debit-->
+                    <td></td><!-- Income Statement Credit-->
+                    <td></td><!-- Balance Sheet / Debit-->
+                    <td></td><!-- Balance Sheet / Credit-->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>TOTAL</td>
+                    <td>2,423,000</td>
+                    <td>2,423,000</td>
+                    <td>159,666.67</td>
+                    <td>159,666.67</td>
+                    <td>2,516,000.00</td>
+                    <td>2,516,000.00</td>
+                    <td>243,667</td>
+                    <td>464,000</td>
+                    <td>2,272,333.33</td>
+                    <td>2,052,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Net Income</td>
+                    <td>220,333.33</td>
+                    <td></td>
+                    <td></td>
+                    <td>220,333.33</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Totals</td>
+                    <td>464,000</td>
+                    <td>464,000</td>
+                    <td>2,272,333.33</td>
+                    <td>2,272,333.33</td>
+                </tr>        
+                </table>
+        </div>
+    </center>
+    </div>
+    
+    
+</body>
+
+</html>

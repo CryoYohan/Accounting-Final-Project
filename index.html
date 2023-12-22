@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AccountFUCKINGting</title>
+    <title>General Ledger</title>
 
 </head>
 <style>
@@ -24,10 +24,23 @@
         font-size: 3em;
     }
 
-    body h2, h3 {
+    #memberslist {
+        text-align: center;
+    }
+    #memberslist li {
+        list-style:none ;
+        font-size: 1.5em;
+    }
+
+    body h2 {
         text-align: center;
         padding-top: 0.5em;
         color: #262626;
+        padding-bottom: 1em;
+    }
+    body h3{
+        padding-top: 5%;
+        text-align: left;
     }
 
     .navbar {
@@ -98,6 +111,7 @@
         border-collapse: collapse;
         width: 90%;
         background: rgb(243, 243, 243);
+        margin-bottom: 3%;
     }
     td, th {
         border: 1px solid #570d0daf;
@@ -109,404 +123,35 @@
     <center>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Journal Entry</a></li>
-                <li><a href="index.html">General Ledger</a></li>
-                <li><a href="#">T-Accounts</a></li>
-                <li><a href="#">Trial Balance</a></li>
-                <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="generalLedger.html">General Ledger</a></li>
+                    <li><a href="tAccounts.html">T-Accounts</a></li>
+                    <li><a href="trialBalance.html">Trial Balance</a></li>
+                    <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+                    <li><a href="Worksheet.html">Worksheet</a></li>
             </ul>           
         </nav>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Worksheet</a></li>
                 <li><a href="incomestatement.html">Income Statement</a></li>
-                <li><a href="#">Statement of Changes in Owner's Equity</a></li>
+                <li><a href="StatementOfChanges.html">Statement of Changes in Owner's Equity</a></li>
                 <li><a href="balancesheet.html">Balance Sheet</a></li>
             </ul>           
         </nav>
     </center>
     
     <div class="container">
-        <h1>General Ledger</h1>
-        <h2>Dr. Nick Marasigan, M.D.</h2>
-        <h3>For the month ended October 31, 2021</h3>
-        <center>
-            <div class="acck ">
-                <table>
-                <tr>
-                        <th></th>
-                        <th>Date</th>
-                        <th>Particulars</th>
-                        <th>Particulars</th>
-                        <th></th>
-                        <th>PR</th>
-                        <th>Debit</th>
-                        <th>Credit</th>
-                </tr>
-                <tr>
-                        <td> </td>
-                        <td>1</td>
-                        <td>Cash</td>
-                        <td></td>
-                        <td></td>
-                        <td>110</td>
-                        <td>250,000</td>
-                        <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Marasigan Capital</td>
-                    <td></td>
-                    <td>310</td>
-                    <td></td>
-                    <td>250,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>1</td>
-                    <td>Medical Building</td>
-                    <td></td>
-                    <td></td>
-                    <td>160</td>
-                    <td>1,000,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td>Land</td>
-                    <td></td>
-                    <td></td>
-                    <td>150</td>
-                    <td>250,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>20% Notes Payable</td>
-                    <td></td>
-                    <td>120</td>
-                    <td></td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>1</td>
-                    <td>Medical Equipment</td>
-                    <td></td>
-                    <td></td>
-                    <td>170</td>
-                    <td>420,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td>Medical Supplies</td>
-                    <td></td>
-                    <td></td>
-                    <td>130</td>
-                    <td>39,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>59,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>24% Notes Payable</td>
-                    <td></td>
-                    <td>210</td>
-                    <td></td>
-                    <td>400,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>2</td>
-                    <td>Insurance Expense</td>
-                    <td></td>
-                    <td></td>
-                    <td>520</td>
-                    <td>20,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>20,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>4</td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td></td>
-                    <td>110</td>
-                    <td>117,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Medical Revenues</td>
-                    <td></td>
-                    <td>410</td>
-                    <td></td>
-                    <td>117,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>7</td>
-                    <td>Medical Supplies</td>
-                    <td></td>
-                    <td></td>
-                    <td>130</td>
-                    <td>17,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Accounts Payable</td>
-                    <td></td>
-                    <td>230</td>
-                    <td></td>
-                    <td>17,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>10</td>
-                    <td>Salaries Expense</td>
-                    <td></td>
-                    <td></td>
-                    <td>510</td>
-                    <td>73,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>73,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>12</td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td></td>
-                    <td>110</td>
-                    <td>90,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Unearned Research Revenue</td>
-                    <td></td>
-                    <td>260</td>
-                    <td></td>
-                    <td>90,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>18</td>
-                    <td>Accounts Receivable</td>
-                    <td></td>
-                    <td></td>
-                    <td>120</td>
-                    <td>317,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Medical Revenues</td>
-                    <td></td>
-                    <td>410</td>
-                    <td></td>
-                    <td>317,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>21</td>
-                    <td>Repair Expense</td>
-                    <td></td>
-                    <td></td>
-                    <td>530</td>
-                    <td>23,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>23,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>23</td>
-                    <td>Telephone Expense</td>
-                    <td></td>
-                    <td></td>
-                    <td>560</td>
-                    <td>3,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td>110</td>
-                    <td>3,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>24</td>
-                    <td>Medical Equipment</td>
-                    <td></td>
-                    <td></td>
-                    <td>170</td>
-                    <td>45,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Accounts Payable</td>
-                    <td></td>
-                    <td>230</td>
-                    <td></td>
-                    <td>45,000</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>25</td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td></td>
-                    <td>110</td>
-                    <td>113,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Accounts Receivable</td>
-                    <td></td>
-                    <td>120</td>
-                    <td>113,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>27</td>
-                    <td>Accounts Payable</td>
-                    <td></td>
-                    <td></td>
-                    <td>230</td>
-                    <td>13,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>13,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>30</td>
-                    <td>Marasigan, Withdrawal</td>
-                    <td></td>
-                    <td></td>
-                    <td>320</td>
-                    <td>200,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>200,000</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>30</td>
-                    <td>Association Due Expense</td>
-                    <td></td>
-                    <td></td>
-                    <td>550</td>
-                    <td>15,000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td></td>
-                    <td></td>
-                    <td>Cash</td>
-                    <td></td>
-                    <td>110</td>
-                    <td></td>
-                    <td>15,000</td>
-                </tr>
-                </table>
+        <h1>Accounting Final Project</h1>
+        <div id="memberslist">
+            <h2>Group Members:</h2>
+            <ul>
+                <li>Alferez, Clifford</li>
+                <li>Amaro, Kobe Bryant</li>
+                <li>Gorgonio, Bryl Daryl</li>
+                <li>Ypil, Cyril John</li>
+            </ul>
+        <h3>Submitted to Ms. Gilda David</h3>
         </div>
-    </center>
     </div>
     
     
